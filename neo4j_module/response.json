@@ -1,0 +1,152 @@
+{
+  "entities": [
+    {
+      "id": "sherkat_noavaran_sabz",
+      "name": "شرکت نوآوران سبز",
+      "type": "Organization",
+      "properties": {
+        "established_year": "۱۳۸۵"
+      }
+    },
+    {
+      "id": "dr_karimi",
+      "name": "دکتر کریمی",
+      "type": "Person",
+      "properties": {
+        "role": "رئیس هیئت‌مدیره",
+        "previous_role": "استاد دانشکده مهندسی برق دانشگاه تهران"
+      }
+    },
+    {
+      "id": "daneshgah_sanati_sharif",
+      "name": "دانشگاه صنعتی شریف",
+      "type": "Organization",
+      "properties": {}
+    },
+    {
+      "id": "qardardad_1402",
+      "name": "قرارداد همکاری",
+      "type": "Event",
+      "properties": {
+        "date": "۱۰ آبان ۱۴۰۲",
+        "subject": "پژوهش در زمینه انرژی‌های تجدیدپذیر و توسعه باتری‌های لیتیوم‌یونی"
+      }
+    },
+    {
+      "id": "daneshgah_tehran",
+      "name": "دانشگاه تهران",
+      "type": "Organization",
+      "properties": {}
+    },
+    {
+      "id": "mohandes_rezaviyan",
+      "name": "مهندس رضویان",
+      "type": "Person",
+      "properties": {
+        "role": "معاون پژوهشی شرکت نوآوران سبز"
+      }
+    },
+    {
+      "id": "neshrieh_beynol_melali_energy",
+      "name": "نشریه بین‌المللی انرژی",
+      "type": "Organization",
+      "properties": {}
+    },
+    {
+      "id": "alman",
+      "name": "آلمان",
+      "type": "Location",
+      "properties": {}
+    },
+    {
+      "id": "sanaye_electropars",
+      "name": "صنایع الکتروپارس",
+      "type": "Organization",
+      "properties": {
+        "competitor_of": "شرکت نوآوران سبز"
+      }
+    },
+    {
+      "id": "sherkat_chini",
+      "name": "شرکت چینی",
+      "type": "Organization",
+      "properties": {}
+    }
+  ],
+  "relationships": [
+    {
+      "source": "dr_karimi",
+      "target": "sherkat_noavaran_sabz",
+      "type": "FOUNDED",
+      "properties": {
+        "year": "۱۳۸۵"
+      }
+    },
+    {
+      "source": "sherkat_noavaran_sabz",
+      "target": "daneshgah_sanati_sharif",
+      "type": "SIGNED_CONTRACT_WITH",
+      "properties": {
+        "date": "۱۰ آبان ۱۴۰۲"
+      }
+    },
+    {
+      "source": "sherkat_noavaran_sabz",
+      "target": "qardardad_1402",
+      "type": "INVOLVED_IN",
+      "properties": {}
+    },
+    {
+      "source": "daneshgah_sanati_sharif",
+      "target": "qardardad_1402",
+      "type": "INVOLVED_IN",
+      "properties": {}
+    },
+    {
+      "source": "dr_karimi",
+      "target": "sherkat_noavaran_sabz",
+      "type": "WORKS_AT",
+      "properties": {
+        "role": "رئیس هیئت‌مدیره"
+      }
+    },
+    {
+      "source": "dr_karimi",
+      "target": "daneshgah_tehran",
+      "type": "WORKS_AT",
+      "properties": {
+        "role": "استاد دانشکده مهندسی برق"
+      }
+    },
+    {
+      "source": "mohandes_rezaviyan",
+      "target": "sherkat_noavaran_sabz",
+      "type": "WORKS_AT",
+      "properties": {
+        "role": "معاون پژوهشی"
+      }
+    },
+    {
+      "source": "mohandes_rezaviyan",
+      "target": "neshrieh_beynol_melali_energy",
+      "type": "PUBLISHED_IN",
+      "properties": {}
+    },
+    {
+      "source": "alman",
+      "target": "mohandes_rezaviyan",
+      "type": "ORIGINATES_FROM",
+      "properties": {
+        "context": "پژوهشگران همکار"
+      }
+    },
+    {
+      "source": "sanaye_electropars",
+      "target": "sherkat_chini",
+      "type": "JOINT_VENTURE_WITH",
+      "properties": {}
+    }
+  ]
+}
+
+

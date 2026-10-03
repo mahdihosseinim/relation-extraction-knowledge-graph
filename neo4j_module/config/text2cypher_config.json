@@ -1,0 +1,29 @@
+{
+  "api_key": "********",
+
+  "cypher_primary_model": "gemini-3.8-flash",
+  "cypher_fallback_models": [
+    "3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3.7-flash",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "Gemini 3 Flash"
+
+  ],
+
+  "answer_primary_model": "gemini-3.5-flash-lite",
+  "answer_fallback_models": [
+    "gemini-3.5-flash-lite",
+    "Gemini 2.5 Flash Lite"
+  ],
+
+  "max_cypher_attempts": 6,
+  "max_rows": 50,
+  "query_timeout_seconds": 10,
+
+  "llm_max_retries": 1,
+  "llm_max_output_tokens": 2048,
+
+  "proxy": null
+}

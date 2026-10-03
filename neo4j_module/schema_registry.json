@@ -1,0 +1,495 @@
+{
+  "schema_version": "1.0",
+  "entity_types": [
+    "Person",
+    "Organization",
+    "Location",
+    "Facility",
+    "Event",
+    "Product",
+    "Work",
+    "Publication",
+    "Technology",
+    "Concept",
+    "Law",
+    "Language",
+    "Award",
+    "Time",
+    "Number"
+  ],
+  "relationship_types": {
+    "WORKS_AT": {
+      "source_types": [
+        "Person"
+      ],
+      "target_types": [
+        "Organization"
+      ]
+    },
+    "FOUNDED": {
+      "source_types": [
+        "Person",
+        "Organization"
+      ],
+      "target_types": [
+        "Organization"
+      ]
+    },
+    "MEMBER_OF": {
+      "source_types": [
+        "Person",
+        "Organization"
+      ],
+      "target_types": [
+        "Organization"
+      ]
+    },
+    "HEAD_OF": {
+      "source_types": [
+        "Person"
+      ],
+      "target_types": [
+        "Organization"
+      ]
+    },
+    "EDUCATED_AT": {
+      "source_types": [
+        "Person"
+      ],
+      "target_types": [
+        "Organization"
+      ]
+    },
+    "REPRESENTS": {
+      "source_types": [
+        "Person"
+      ],
+      "target_types": [
+        "Organization"
+      ]
+    },
+    "SUBSIDIARY_OF": {
+      "source_types": [
+        "Organization"
+      ],
+      "target_types": [
+        "Organization"
+      ]
+    },
+    "PART_OF": {
+      "source_types": [
+        "Organization",
+        "Location",
+        "Facility",
+        "Event",
+        "Product",
+        "Work",
+        "Publication",
+        "Technology",
+        "Concept"
+      ],
+      "target_types": [
+        "Organization",
+        "Location",
+        "Facility",
+        "Event",
+        "Product",
+        "Work",
+        "Publication",
+        "Technology",
+        "Concept"
+      ]
+    },
+    "PARTNER_OF": {
+      "source_types": [
+        "Organization"
+      ],
+      "target_types": [
+        "Organization"
+      ]
+    },
+    "COMPETITOR_OF": {
+      "source_types": [
+        "Organization"
+      ],
+      "target_types": [
+        "Organization"
+      ]
+    },
+    "LOCATED_IN": {
+      "source_types": [
+        "Organization",
+        "Facility",
+        "Event",
+        "Product",
+        "Work",
+        "Location"
+      ],
+      "target_types": [
+        "Location"
+      ]
+    },
+    "ORIGINATES_FROM": {
+      "source_types": [
+        "Person",
+        "Organization",
+        "Product",
+        "Work",
+        "Publication",
+        "Technology"
+      ],
+      "target_types": [
+        "Location"
+      ]
+    },
+    "DESTINATION": {
+      "source_types": [
+        "Person",
+        "Product",
+        "Organization"
+      ],
+      "target_types": [
+        "Location"
+      ]
+    },
+    "BORN_IN": {
+      "source_types": [
+        "Person"
+      ],
+      "target_types": [
+        "Location"
+      ]
+    },
+    "DIED_IN": {
+      "source_types": [
+        "Person"
+      ],
+      "target_types": [
+        "Location"
+      ]
+    },
+    "CITIZEN_OF": {
+      "source_types": [
+        "Person"
+      ],
+      "target_types": [
+        "Location"
+      ]
+    },
+    "HEADQUARTERED_IN": {
+      "source_types": [
+        "Organization"
+      ],
+      "target_types": [
+        "Location"
+      ]
+    },
+    "FORMED_IN": {
+      "source_types": [
+        "Organization"
+      ],
+      "target_types": [
+        "Location"
+      ]
+    },
+    "CAPITAL_OF": {
+      "source_types": [
+        "Location"
+      ],
+      "target_types": [
+        "Location"
+      ]
+    },
+    "PARENT_OF": {
+      "source_types": [
+        "Person"
+      ],
+      "target_types": [
+        "Person"
+      ]
+    },
+    "SPOUSE_OF": {
+      "source_types": [
+        "Person"
+      ],
+      "target_types": [
+        "Person"
+      ]
+    },
+    "SIBLING_OF": {
+      "source_types": [
+        "Person"
+      ],
+      "target_types": [
+        "Person"
+      ]
+    },
+    "CREATED_BY": {
+      "source_types": [
+        "Product",
+        "Work",
+        "Publication",
+        "Technology"
+      ],
+      "target_types": [
+        "Person",
+        "Organization"
+      ]
+    },
+    "DEVELOPED_BY": {
+      "source_types": [
+        "Product",
+        "Technology",
+        "Work"
+      ],
+      "target_types": [
+        "Person",
+        "Organization"
+      ]
+    },
+    "MANUFACTURED_BY": {
+      "source_types": [
+        "Product"
+      ],
+      "target_types": [
+        "Organization"
+      ]
+    },
+    "PRODUCED_BY": {
+      "source_types": [
+        "Product",
+        "Work"
+      ],
+      "target_types": [
+        "Person",
+        "Organization"
+      ]
+    },
+    "OPERATED_BY": {
+      "source_types": [
+        "Facility",
+        "Product"
+      ],
+      "target_types": [
+        "Organization"
+      ]
+    },
+    "USED_FOR": {
+      "source_types": [
+        "Technology",
+        "Product",
+        "Concept"
+      ],
+      "target_types": [
+        "Concept",
+        "Event",
+        "Technology"
+      ]
+    },
+    "USES": {
+      "source_types": [
+        "Person",
+        "Organization",
+        "Product",
+        "Technology",
+        "Event"
+      ],
+      "target_types": [
+        "Technology",
+        "Product"
+      ]
+    },
+    "FEATURE_OF": {
+      "source_types": [
+        "Concept",
+        "Technology"
+      ],
+      "target_types": [
+        "Product",
+        "Technology",
+        "Work",
+        "Concept"
+      ]
+    },
+    "EVALUATED_BY": {
+      "source_types": [
+        "Technology",
+        "Product",
+        "Concept"
+      ],
+      "target_types": [
+        "Concept",
+        "Technology",
+        "Number"
+      ]
+    },
+    "AUTHORED_BY": {
+      "source_types": [
+        "Work",
+        "Publication"
+      ],
+      "target_types": [
+        "Person"
+      ]
+    },
+    "PUBLISHED_BY": {
+      "source_types": [
+        "Work",
+        "Publication"
+      ],
+      "target_types": [
+        "Organization"
+      ]
+    },
+    "PUBLISHED_IN": {
+      "source_types": [
+        "Work",
+        "Publication"
+      ],
+      "target_types": [
+        "Publication"
+      ]
+    },
+    "DIRECTED_BY": {
+      "source_types": [
+        "Work"
+      ],
+      "target_types": [
+        "Person"
+      ]
+    },
+    "PERFORMED_BY": {
+      "source_types": [
+        "Work"
+      ],
+      "target_types": [
+        "Person",
+        "Organization"
+      ]
+    },
+    "TOPIC_OF": {
+      "source_types": [
+        "Concept"
+      ],
+      "target_types": [
+        "Work",
+        "Publication"
+      ]
+    },
+    "INVOLVED_IN": {
+      "source_types": [
+        "Person",
+        "Organization"
+      ],
+      "target_types": [
+        "Event"
+      ]
+    },
+    "STARTED_AT": {
+      "source_types": [
+        "Event",
+        "Organization",
+        "Work"
+      ],
+      "target_types": [
+        "Time"
+      ]
+    },
+    "ENDED_AT": {
+      "source_types": [
+        "Event",
+        "Organization",
+        "Work"
+      ],
+      "target_types": [
+        "Time"
+      ]
+    },
+    "OCCURRED_AT": {
+      "source_types": [
+        "Event"
+      ],
+      "target_types": [
+        "Time"
+      ]
+    },
+    "CAUSES": {
+      "source_types": [
+        "Event",
+        "Concept",
+        "Technology",
+        "Product"
+      ],
+      "target_types": [
+        "Event",
+        "Concept"
+      ]
+    },
+    "INSTANCE_OF": {
+      "source_types": [
+        "Person",
+        "Organization",
+        "Location",
+        "Facility",
+        "Event",
+        "Product",
+        "Work",
+        "Publication",
+        "Technology",
+        "Law",
+        "Language",
+        "Award",
+        "Number"
+      ],
+      "target_types": [
+        "Concept"
+      ]
+    },
+    "SUBCLASS_OF": {
+      "source_types": [
+        "Concept"
+      ],
+      "target_types": [
+        "Concept"
+      ]
+    },
+    "COMPARES_WITH": {
+      "source_types": [
+        "Product",
+        "Technology",
+        "Concept",
+        "Work",
+        "Organization"
+      ],
+      "target_types": [
+        "Product",
+        "Technology",
+        "Concept",
+        "Work",
+        "Organization"
+      ]
+    },
+    "OWNS": {
+      "source_types": [
+        "Person",
+        "Organization"
+      ],
+      "target_types": [
+        "Organization",
+        "Product",
+        "Facility"
+      ]
+    },
+    "RECEIVED_AWARD": {
+      "source_types": [
+        "Person",
+        "Organization",
+        "Work",
+        "Publication"
+      ],
+      "target_types": [
+        "Award"
+      ]
+    }
+  }
+}
